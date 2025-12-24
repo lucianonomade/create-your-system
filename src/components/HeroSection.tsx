@@ -3,10 +3,11 @@ import logo from "@/assets/logo-agrobiotech.webp";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-4 py-16 bg-gradient-to-br from-background via-muted to-background relative overflow-hidden">
+    <section className="min-h-screen flex flex-col items-center justify-center px-4 py-16 bg-gradient-to-br from-secondary via-secondary/95 to-secondary/90 relative overflow-hidden">
       {/* Background decorative elements */}
-      <div className="absolute top-0 left-0 w-72 h-72 bg-primary/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
+      <div className="absolute top-0 left-0 w-72 h-72 bg-primary/20 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent/20 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
+      <div className="absolute top-1/2 left-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
       
       <div className="relative z-10 text-center max-w-3xl mx-auto">
         {/* Logo */}
@@ -20,20 +21,19 @@ const HeroSection = () => {
 
         {/* Title */}
         <h1 
-          className="font-montserrat text-4xl md:text-5xl lg:text-6xl font-bold text-secondary mb-6 animate-fade-in-up"
+          className="font-montserrat text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in-up"
           style={{ animationDelay: "0.2s" }}
         >
-          Site em <span className="text-primary">Manutenção</span>
+          Inovação e <span className="text-primary">Sustentabilidade</span>
         </h1>
 
         {/* Description */}
         <p 
-          className="font-montserrat text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-in-up"
+          className="font-montserrat text-lg md:text-xl text-white/80 mb-8 max-w-2xl mx-auto animate-fade-in-up"
           style={{ animationDelay: "0.3s" }}
         >
-          Estamos trabalhando para melhorar sua experiência. 
-          Em breve voltaremos com novidades. Enquanto isso, entre em contato conosco 
-          ou acompanhe nossas redes sociais.
+          Soluções biotecnológicas para o agronegócio brasileiro. 
+          Entre em contato conosco e descubra como podemos ajudar seu negócio a crescer de forma sustentável.
         </p>
 
         {/* Social Links */}
@@ -45,7 +45,7 @@ const HeroSection = () => {
             href="https://instagram.com/agrobiotech" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="p-3 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110"
+            className="p-3 rounded-full bg-white/10 text-white hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110"
             aria-label="Instagram"
           >
             <Instagram className="w-6 h-6" />
@@ -54,7 +54,7 @@ const HeroSection = () => {
             href="https://linkedin.com/company/agrobiotech" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="p-3 rounded-full bg-accent/10 text-accent hover:bg-accent hover:text-accent-foreground transition-all duration-300 hover:scale-110"
+            className="p-3 rounded-full bg-white/10 text-white hover:bg-accent hover:text-accent-foreground transition-all duration-300 hover:scale-110"
             aria-label="LinkedIn"
           >
             <Linkedin className="w-6 h-6" />
@@ -63,7 +63,7 @@ const HeroSection = () => {
             href="https://youtube.com/@agrobiotech" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="p-3 rounded-full bg-secondary/10 text-secondary hover:bg-secondary hover:text-secondary-foreground transition-all duration-300 hover:scale-110"
+            className="p-3 rounded-full bg-white/10 text-white hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110"
             aria-label="YouTube"
           >
             <Youtube className="w-6 h-6" />
